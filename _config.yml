@@ -1,25 +1,52 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title:            UX & UI Design System
+email:            lduongh@outlook.com
+tagline:          User Experience & User Interface
+description:      Library of UX & UI design patterns
+author:           'Long Duong'
+url:              "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl:          "" # the subpath of your site, e.g. /blog/
+twitter_username: lduongh
+github_username:  longster
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title:        twitter
+    url:          http://twitter.com/lduongh
+  - title:        facebook
+    url:          http://facebook.com/longster
+  - title:        github
+    url:          http://github.com/longster
+
+
+# Footer settings
+footer:
+  copyright:        Long Duong
+  location:         Houston, TX
+  social:           Around the Web
+  credits:          Credits
 
 # Build settings
 markdown: kramdown
 
+# Exclude files in publish site: ./_site
 exclude:
   - package.json
   - node_modules
   - gulpfile.js
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
 
 keep_files:
-  - _site/css
-  - _site/js
+  - _site/assets/css
+  - _site/assets/js
 
-include: ['_pages']
+# Include files in publish site: ./_site
+include: [
+  '_pages'
+  #'.htaccess'
+  ]
