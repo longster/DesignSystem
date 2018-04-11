@@ -6,7 +6,11 @@
   <body>
     {% include topbar.html %}
     {% include header.html %}
-    {{ content }}
+    
+    <section class="container-full page-background">
+      {{ content }}
+    </section>
+
     {% include footer.html %}
     <script src="{{ root }}/assets/js/app.bundle.js"></script>
   </body>
