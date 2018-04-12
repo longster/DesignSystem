@@ -4,8 +4,13 @@
     {% include meta.html %}
   </head>
   <body>
-    {% include topbar.html %}
+    
+    {% include nav.html %}
     {% include header.html %}
+    
+    {% comment %}
+    {% include topbar.html %}
+    {% endcomment %}
     
     <section class="container-full page-background">
       {{ content }}

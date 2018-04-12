@@ -2,7 +2,8 @@
 
 footer {
   @include rem(padding, 30px 0 30px 0);
-  background-color: #333;
+  font-size: .75rem;
+  font-weight: light;
   color: #888;
   a {
     color: #888;
@@ -13,9 +14,13 @@ footer {
 }
 
 .footer-copyright {
-  float: left;
+  @include float-left;
 }
 
+.footer-author {
+  @include float-right;
+}
+/*
 .footer-facebook {
   float: right;
   font-size: 24px;
@@ -31,13 +36,10 @@ footer {
   float: right;
 }
 
-.footer-author {
-  float: right;
-}
-
 .footer-divider {
   &:after {
     content:"-";
     color: #fff;
   }
 }
+*/
