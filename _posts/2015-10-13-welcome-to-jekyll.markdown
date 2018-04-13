@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2015-10-13 14:40:50
-categories: jekyll update
+date:   2018-04-12
+categories: Overview Basics 
 ---
 
 <div class="container">
