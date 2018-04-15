@@ -1,19 +1,43 @@
 
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-    <a class="navbar-brand" href="/">{{ page.title }}</a>
+    <a class="navbar-brand" href="/">
+        <svg viewBox="0 0 150 153.8" class="logo">
+            <title>Long Duong</title>
+            <path class="lduong" d="M58,82.7c0,0,3,16,25,16v28.1c-21,0-52.8-14.2-52.8-44.3c0-7.1,0.1-13.5,0.1-19.3L0,93.5c0,0.2,0.1,0.3,0.1,0.5L0,93.9v59.9h92.1L92,71c0,0-3-16-25-16V26.9c20,0,52.8,14.2,52.8,44.3c0,6.9-0.1,13.2-0.1,18.9L150,59.9l0,0l0,0V0H57.9L58,82.7z"
+            />
+        </svg>
+    </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto d-none">
             <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
             </li>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <ul class="navbar-nav ml-auto">
+            {% for nav in site.data.nav %}
+            <li class="nav-item {% if page.url == nav.href %}active{% endif %}">
+                <a class="nav-link {% if nav.subcategories != null %}has-subcat{% endif %}" href="{{ nav.href }}">{{ nav.title }}</a>
+                {% if nav.subcategories != null %}
+                <span class="dropdown-chevron-mobile"></span>
+                {% endif %} {% if nav.subcategories != null %}
+                <ul class="subcategory">
+                    {% for subcategory in nav.subcategories %}
+                    <li class="nav-subitem">
+                        <a class="nav-sublink" href="{{ subcategory.subhref }}">
+                            {{ subcategory.subtitle }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
     </div>
 </nav>

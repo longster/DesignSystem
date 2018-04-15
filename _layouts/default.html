@@ -3,19 +3,12 @@
   <head>
     {% include meta.html %}
   </head>
-  <body>
-    
+  <body {% if page.body_class %}class="{{ page.body_class }}" {% endif %}>
     {% include nav.html %}
     {% include header.html %}
-    
-    {% comment %}
-    {% include topbar.html %}
-    {% endcomment %}
-    
-    <section class="container-full page-background">
+    <section class="container-fluid">
       {{ content }}
     </section>
-
     {% include footer.html %}
     <script src="{{ root }}/assets/js/app.bundle.js"></script>
   </body>

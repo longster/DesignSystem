@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2018-04-12
-categories: Overview Basics 
+title:  "Principle stuff here!"
+date:   2018-01-13
+categories: Principles 
+permalink: /articles/principles/principles-stuff/
 ---
 
 <div class="container">

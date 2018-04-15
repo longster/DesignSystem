@@ -12,14 +12,13 @@ $fa-font-path: "../fonts/FontAwesome";
 /* Global */
 @import "base/global";
 
-/* Page */
-@import "pages/home-page";
+/* Page 
+@import "pages/home-page";*/
 
 /* Layout */
-@import "layout/topbar";
+@import "layout/sidebar";
 @import "layout/header";
 @import "layout/page";
-@import "layout/page-banner";
 @import "layout/footer";
 
 /* Components */
