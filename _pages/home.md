@@ -3,7 +3,7 @@ layout: home
 title: Design System
 description: Creating An Ideal User Experience & User Interactive Language
 permalink: /
-body-class: home
+body_class: home
 ---
 
 IMPLEMENTATION NOTES:

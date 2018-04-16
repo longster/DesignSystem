@@ -1,3 +1,18 @@
+/* Theme Customization - Override Bootstrap */
+$body-bg: #f2f2f2;
+$body-color: #111;
+
+$theme-colors: (
+  "primary": #ff8b00,
+  "secondary":  gray
+  /*"success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark*/
+);
+
 /* Bootstrap */
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -12,13 +27,13 @@ $fa-font-path: "../fonts/FontAwesome";
 /* Global */
 @import "base/global";
 
-/* Page 
-@import "pages/home-page";*/
+/* Page */
+@import "pages/home-page";
 
 /* Layout */
-@import "layout/sidebar";
 @import "layout/header";
 @import "layout/page";
+@import "layout/sidebar";
 @import "layout/footer";
 
 /* Components */

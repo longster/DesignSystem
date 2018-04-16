@@ -1,6 +1,6 @@
 /* Header */
 
-header.title {
+.title {
   @include rem(padding, 2rem 2rem);
   border-bottom: 1px solid #ddd;
   margin-top: 5.5rem;
