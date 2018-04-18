@@ -39,6 +39,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
+  - src
 
 
 keep_files:
